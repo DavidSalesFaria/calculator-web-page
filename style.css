@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.calc-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px
+}
+
+.calc-button:hover {
+  filter: brightness(1.2);
+}
+
+.operation-button{
+  background-color: rgb(255, 131, 15);
+}

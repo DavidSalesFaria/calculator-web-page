@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="Web Calculator">
+    <meta property="og:description" content="My calculator project">
+    <meta property="og:image" content="imgs/rich-view.png">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <p>Calculator</p>
+    <p class="calculation-paragraph"></p>
+    <p>
+      <button class="calc-button js-one-button" onclick="
+      updateCalculation(1);
+      ">1</button>
+      <button class="calc-button js-two-button"  onclick="
+        updateCalculation(2);
+      ">2</button>
+      <button class="calc-button js-three-button"  onclick="
+        updateCalculation(3);
+      ">3</button>
+      <button class="calc-button js-plus-button operation-button"  onclick="
+        updateCalculation(' + ');
+      ">+</button>
+    </p>
+
+    <p>
+      <button class="calc-button js-four-button"  onclick="
+        updateCalculation(4);
+      ">4</button>
+      <button class="calc-button js-five-button"  onclick="
+        updateCalculation(5);
+      ">5</button>
+      <button class="calc-button js-six-button"  onclick="
+        updateCalculation(6);
+      ">6</button>
+      <button class="calc-button js-minus-button operation-button"  onclick="
+       updateCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="calc-button js-seven-button"  onclick="
+        updateCalculation(7);
+      ">7</button>
+      <button class="calc-button js-eight-button"  onclick="
+        updateCalculation(8);
+      ">8</button>
+      <button class="calc-button js-nine-button"  onclick="
+        updateCalculation(9);
+      ">9</button>
+      <button class="calc-button js-star-button operation-button"  onclick="
+        updateCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="calc-button js-zero-button"  onclick="
+        updateCalculation(0);
+      ">0</button>
+      <button class="calc-button js-dot-button"  onclick="
+        updateCalculation('.');
+      ">.</button>
+      <button class="calc-button js-equal-button"  onclick="
+        calculation = eval(calculation);
+        displayCalculation(calculation);
+        localStorage.setItem('calculation', calculation);
+        console.log(calculation);
+      ">=</button>
+      <button class="calc-button js-bar-button operation-button"  onclick="
+        updateCalculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="calc-button js-clear-button" onclick="
+        calculation = '';
+        displayCalculation(calculation);
+        localStorage.removeItem('calculation')
+      ">Clear</button>
+    </p>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
